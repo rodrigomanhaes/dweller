@@ -1,0 +1,7 @@
+= lugares
+
+Gem para seed de cidades e estados do Brasil e países do mundo para aplicações
+que usam ActiveRecord.
+
+Em breve!
+
