@@ -1,0 +1,145 @@
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Damian Wayne', 'Wayne Manor, Gotham City', NULL, 14, 'He is a dark Robin', '2010-06-02')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Dick Grayson', 'Wayne Manor, Gotham City', 1, 26, 'He is a happy Batman', '2010-04-21')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Kal-El', 'Kandor, New Krypton', NULL, 36, 'He''s not anymore the last son of Krypton', '1997-10-10')
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "super_heros" WHERE (address like '%Wayne Manor, Gotham City%')[0m
+  [1m[35mSuperHero Load (0.3ms)[0m  SELECT "super_heros".* FROM "super_heros" WHERE (address like '%Wayne Manor, Gotham City%')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (216.2ms)[0m  DELETE FROM "super_heros";
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Damian Wayne', 'Wayne Manor, Gotham City', NULL, 14, 'He is a dark Robin', '2010-06-02')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Dick Grayson', 'Wayne Manor, Gotham City', 1, 26, 'He is a happy Batman', '2010-04-21')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Kal-El', 'Kandor, New Krypton', NULL, 36, 'He''s not anymore the last son of Krypton', '1997-10-10')[0m
+  [1m[35mSuperHero Load (0.4ms)[0m  SELECT "super_heros".* FROM "super_heros" WHERE (address like '%Wayne Manor, Gotham City%' and name like '%Dick Grayson%')
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (141.8ms)[0m  DELETE FROM "super_heros";
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Damian Wayne', 'Wayne Manor, Gotham City', NULL, 14, 'He is a dark Robin', '2010-06-02')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Dick Grayson', 'Wayne Manor, Gotham City', 1, 26, 'He is a happy Batman', '2010-04-21')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Kal-El', 'Kandor, New Krypton', NULL, 36, 'He''s not anymore the last son of Krypton', '1997-10-10')[0m
+  [1m[35mSuperHero Load (0.4ms)[0m  SELECT "super_heros".* FROM "super_heros" WHERE (name like '%Kal-El%')
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (86.5ms)[0m  DELETE FROM "super_heros";
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Damian Wayne', 'Wayne Manor, Gotham City', NULL, 14, 'He is a dark Robin', '2010-06-02')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Dick Grayson', 'Wayne Manor, Gotham City', 1, 26, 'He is a happy Batman', '2010-04-21')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Kal-El', 'Kandor, New Krypton', NULL, 36, 'He''s not anymore the last son of Krypton', '1997-10-10')[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+  [1m[36mSQL (87.6ms)[0m  [1mDELETE FROM "super_heros";[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Damian Wayne', 'Wayne Manor, Gotham City', NULL, 14, 'He is a dark Robin', '2010-06-02')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Dick Grayson', 'Wayne Manor, Gotham City', 1, 26, 'He is a happy Batman', '2010-04-21')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Kal-El', 'Kandor, New Krypton', NULL, 36, 'He''s not anymore the last son of Krypton', '1997-10-10')
+  [1m[36mSuperHero Load (0.3ms)[0m  [1mSELECT "super_heros".* FROM "super_heros"[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+  [1m[36mSQL (86.4ms)[0m  [1mDELETE FROM "super_heros";[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Damian Wayne', 'Wayne Manor, Gotham City', NULL, 14, 'He is a dark Robin', '2010-06-02')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Dick Grayson', 'Wayne Manor, Gotham City', 1, 26, 'He is a happy Batman', '2010-04-21')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Kal-El', 'Kandor, New Krypton', NULL, 36, 'He''s not anymore the last son of Krypton', '1997-10-10')
+  [1m[36mSuperHero Load (0.4ms)[0m  [1mSELECT "super_heros".* FROM "super_heros" WHERE ("super_heros"."name" = 'Damian Wayne') LIMIT 1[0m
+  [1m[35mSuperHero Load (0.3ms)[0m  SELECT "super_heros".* FROM "super_heros" WHERE ("super_heros"."sidekick_id" = 1)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (103.3ms)[0m  DELETE FROM "super_heros";
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Damian Wayne', 'Wayne Manor, Gotham City', NULL, 14, 'He is a dark Robin', '2010-06-02')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Dick Grayson', 'Wayne Manor, Gotham City', 1, 26, 'He is a happy Batman', '2010-04-21')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Kal-El', 'Kandor, New Krypton', NULL, 36, 'He''s not anymore the last son of Krypton', '1997-10-10')[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "super_heros" WHERE (name like '%ay%')
+  [1m[36mSuperHero Load (0.3ms)[0m  [1mSELECT "super_heros".* FROM "super_heros" WHERE (name like '%ay%')[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+  [1m[36mSQL (84.7ms)[0m  [1mDELETE FROM "super_heros";[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Damian Wayne', 'Wayne Manor, Gotham City', NULL, 14, 'He is a dark Robin', '2010-06-02')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Dick Grayson', 'Wayne Manor, Gotham City', 1, 26, 'He is a happy Batman', '2010-04-21')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Kal-El', 'Kandor, New Krypton', NULL, 36, 'He''s not anymore the last son of Krypton', '1997-10-10')
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "super_heros" WHERE (summary like '% is %')[0m
+  [1m[35mSuperHero Load (0.3ms)[0m  SELECT "super_heros".* FROM "super_heros" WHERE (summary like '% is %')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (118.7ms)[0m  DELETE FROM "super_heros";
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Damian Wayne', 'Wayne Manor, Gotham City', NULL, 14, 'He is a dark Robin', '2010-06-02')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Dick Grayson', 'Wayne Manor, Gotham City', 1, 26, 'He is a happy Batman', '2010-04-21')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Kal-El', 'Kandor, New Krypton', NULL, 36, 'He''s not anymore the last son of Krypton', '1997-10-10')[0m
+  [1m[35mSuperHero Load (0.3ms)[0m  SELECT "super_heros".* FROM "super_heros" WHERE ("super_heros"."age" BETWEEN 25 AND 36)
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (75.9ms)[0m  DELETE FROM "super_heros";
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Damian Wayne', 'Wayne Manor, Gotham City', NULL, 14, 'He is a dark Robin', '2010-06-02')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Dick Grayson', 'Wayne Manor, Gotham City', 1, 26, 'He is a happy Batman', '2010-04-21')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Kal-El', 'Kandor, New Krypton', NULL, 36, 'He''s not anymore the last son of Krypton', '1997-10-10')[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "super_heros" WHERE ("super_heros"."date_of_heroic_birth" BETWEEN '2010-01-01' AND '2010-12-31')
+  [1m[36mSuperHero Load (0.3ms)[0m  [1mSELECT "super_heros".* FROM "super_heros" WHERE ("super_heros"."date_of_heroic_birth" BETWEEN '2010-01-01' AND '2010-12-31')[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+  [1m[36mSQL (72.6ms)[0m  [1mDELETE FROM "super_heros";[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Damian Wayne', 'Wayne Manor, Gotham City', NULL, 14, 'He is a dark Robin', '2010-06-02')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Dick Grayson', 'Wayne Manor, Gotham City', 1, 26, 'He is a happy Batman', '2010-04-21')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Kal-El', 'Kandor, New Krypton', NULL, 36, 'He''s not anymore the last son of Krypton', '1997-10-10')
+  [1m[36mSuperHero Load (0.3ms)[0m  [1mSELECT "super_heros".* FROM "super_heros" WHERE (name like '%Wayne%')[0m
+  [1m[35mSuperHero Load (0.3ms)[0m  SELECT "super_heros".* FROM "super_heros" WHERE (name like '%Wayne%')
+  [1m[36mSuperHero Load (0.3ms)[0m  [1mSELECT "super_heros".* FROM "super_heros" WHERE (name like '%Wayne%')[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+  [1m[36mSQL (85.0ms)[0m  [1mDELETE FROM "super_heros";[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Damian Wayne', 'Wayne Manor, Gotham City', NULL, 14, 'He is a dark Robin', '2010-06-02')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Dick Grayson', 'Wayne Manor, Gotham City', 1, 26, 'He is a happy Batman', '2010-04-21')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Kal-El', 'Kandor, New Krypton', NULL, 36, 'He''s not anymore the last son of Krypton', '1997-10-10')
+  [1m[36mSuperHero Load (0.3ms)[0m  [1mSELECT "super_heros".* FROM "super_heros" WHERE ("super_heros"."age" = 14)[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+  [1m[36mSQL (75.9ms)[0m  [1mDELETE FROM "super_heros";[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Damian Wayne', 'Wayne Manor, Gotham City', NULL, 14, 'He is a dark Robin', '2010-06-02')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Dick Grayson', 'Wayne Manor, Gotham City', 1, 26, 'He is a happy Batman', '2010-04-21')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Kal-El', 'Kandor, New Krypton', NULL, 36, 'He''s not anymore the last son of Krypton', '1997-10-10')
+  [1m[36mSuperHero Load (0.4ms)[0m  [1mSELECT "super_heros".* FROM "super_heros" WHERE ("super_heros"."age" BETWEEN 13 AND 25)[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+  [1m[36mSQL (75.2ms)[0m  [1mDELETE FROM "super_heros";[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Damian Wayne', 'Wayne Manor, Gotham City', NULL, 14, 'He is a dark Robin', '2010-06-02')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Dick Grayson', 'Wayne Manor, Gotham City', 1, 26, 'He is a happy Batman', '2010-04-21')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "super_heros" ("name", "address", "sidekick_id", "age", "summary", "date_of_heroic_birth") VALUES ('Kal-El', 'Kandor, New Krypton', NULL, 36, 'He''s not anymore the last son of Krypton', '1997-10-10')
+  [1m[36mSuperHero Load (0.4ms)[0m  [1mSELECT "super_heros".* FROM "super_heros" WHERE ("super_heros"."date_of_heroic_birth" BETWEEN '2010-04-01' AND '2010-04-30')[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+  [1m[36mSQL (86.3ms)[0m  [1mDELETE FROM "super_heros";[0m
+D, [2011-07-07T01:58:58.669219 #11112] DEBUG -- :   [1m[36mPais Load (0.3ms)[0m  [1mSELECT "pais".* FROM "pais"[0m
+D, [2011-07-07T01:58:58.669316 #11112] DEBUG -- : SQLite3::SQLException: no such table: pais: SELECT "pais".* FROM "pais"
+D, [2011-07-07T02:00:05.044450 #11323] DEBUG -- :   [1m[36mPais Load (0.3ms)[0m  [1mSELECT "paises".* FROM "paises"[0m
+D, [2011-07-07T02:00:36.319393 #11377] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+D, [2011-07-07T02:00:36.365211 #11377] DEBUG -- :   [1m[35mAREL (0.2ms)[0m  INSERT INTO "paises" ("name", "gentilico", "gentilico_feminino") VALUES (NULL, NULL, NULL)
+D, [2011-07-07T02:00:36.449876 #11377] DEBUG -- :   [1m[36mPais Load (0.2ms)[0m  [1mSELECT "paises".* FROM "paises"[0m
