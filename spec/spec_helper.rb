@@ -4,8 +4,7 @@
 end
 
 require 'config'
-require 'lugares'
+require 'places'
 
 class Pais < ActiveRecord::Base
 end
-
