@@ -15,4 +15,12 @@ describe Places::Country do
     country.female_demonym.should == 'brasileira'
     country.international_demonym.should == 'Brazilian'
   end
+
+  it 'retrieves state data' do
+    country.should have(27).states
+    rio = country.state('RJ')
+    rio.name.should == 'Rio de Janeiro'
+    rio.acronym.should == 'RJ'
+    rio.region.should == 'Sudeste'
+  end
 end
