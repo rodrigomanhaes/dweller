@@ -1,7 +1,7 @@
-= lugares
+= places
 
-Gem para seed de cidades e estados do Brasil e países do mundo para aplicações
-que usam ActiveRecord.
+Information about places: countries, states, cities etc.
 
-Em breve!
+Currently, at a very initial stage. Suggestions are welcome.
 
+By now, only Brazil is supported.
