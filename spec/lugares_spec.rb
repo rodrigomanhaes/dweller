@@ -23,4 +23,17 @@ describe Places::Country do
     rio.acronym.should == 'RJ'
     rio.region.should == 'Sudeste'
   end
+
+  it 'state retrieves city data' do
+    rio = country.state('RJ')
+    rio.should have(92).cities
+    campos = rio.city('Campos dos Goytacazes')
+    campos.name.should == 'Campos dos Goytacazes'
+    campos.population.should == 463_731
+    campos.urban_population.should == 418_725
+    campos.area.should == 4026.712
+    campos.should_not be_capital
+
+    rio.city('Rio de Janeiro').should be_capital
+  end
 end
