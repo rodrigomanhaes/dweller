@@ -1,12 +1,12 @@
-module Places
+module Dweller
   module State
     attr_reader :name, :acronym, :region
 
-    class PlacesCity; include Places::City; end
+    class DwellerCity; include Dweller::City; end
 
     def cities
       @state_hash[:subregions].map do |city_hash|
-        city = PlacesCity.new
+        city = DwellerCity.new
         city.send "city_hash=", city_hash
         city
       end

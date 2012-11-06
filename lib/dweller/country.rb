@@ -1,6 +1,6 @@
 require 'yaml'
 
-module Places
+module Dweller
   module Country
     def self.included(base)
       base.send :extend, ClassMethods
@@ -30,7 +30,7 @@ module Places
 
     def states
       country_hash[:regions].map do |state_hash|
-        state = PlacesState.new
+        state = DwellerState.new
         state.send "state_hash=", state_hash
         state
       end
@@ -42,7 +42,7 @@ module Places
 
     private
 
-    class PlacesState; include Places::State; end
+    class DwellerState; include Dweller::State; end
 
     def country_hash
       self.class.send :country_hash

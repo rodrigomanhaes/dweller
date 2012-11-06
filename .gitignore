@@ -20,3 +20,4 @@ data/source_files
 *.log
 .rbenv-version
 Gemfile.lock
+*.gem

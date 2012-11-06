@@ -1,4 +1,4 @@
-module Places
+module Dweller
   module City
     attr_reader :name, :population, :urban_population, :area
 

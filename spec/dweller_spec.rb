@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Places::Country do
+describe Dweller::Country do
   class Country
-    include Places::Country
+    include Dweller::Country
   end
 
   let(:country) { Country.load_country('brazil') }

@@ -5,15 +5,15 @@ $:.push File.expand_path("../lib", __FILE__)
 require 'version'
 
 Gem::Specification.new do |s|
-  s.name = 'places'
-  s.version = Places::VERSION
+  s.name = 'dweller'
+  s.version = Dweller::VERSION
   s.date = %q{2012-11-06}
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
 
   s.author = 'Rodrigo Manhães'
   s.description = 'Information about places: countries, states, cities etc.'
   s.email = 'rmanhaes@gmail.com'
-  s.homepage = 'https://github.com/rodrigomanhaes/places'
+  s.homepage = 'https://github.com/rodrigomanhaes/dweller'
   s.summary = 'Information about places: countries, states, cities etc.'
 
   s.rdoc_options = ['--charset=UTF-8']
