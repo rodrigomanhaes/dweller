@@ -1,5 +1,7 @@
 = dweller
 
+{<img src="https://secure.travis-ci.org/rodrigomanhaes/dweller.png"/>}[http://travis-ci.org/rodrigomanhaes/dweller]
+
 Information about places: countries, states, cities etc.
 
 Currently, at a very initial stage. Suggestions are welcome.
@@ -9,6 +11,6 @@ By now, only Brazil is supported.
 Usage (yes, must be improved):
 
     class Country; include Dweller::Country; end
-    
+
     rio = Country.load_country('brazil').state('RJ').
     campos = rio.city('Campos dos Goytacazes')
