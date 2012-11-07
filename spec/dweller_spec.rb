@@ -5,7 +5,7 @@ describe Dweller::Country do
     include Dweller::Country
   end
 
-  let(:country) { Country.load_country('brazil') }
+  let(:country) { Country.named('brazil') }
 
   it 'gets a country by name' do
     country.should be_kind_of Country
@@ -35,5 +35,9 @@ describe Dweller::Country do
     campos.should_not be_capital
 
     rio.city('Rio de Janeiro').should be_capital
+  end
+
+  it 'allows calling "named" directly from Dweller::Country' do
+    Dweller::Country.named('brazil').should have(27).states
   end
 end

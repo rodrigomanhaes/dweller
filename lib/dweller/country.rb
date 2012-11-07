@@ -6,8 +6,12 @@ module Dweller
       base.send :extend, ClassMethods
     end
 
+    def self.named(name)
+      DwellerCountry.named(name)
+    end
+
     module ClassMethods
-      def load_country(name)
+      def named(name)
         hash = YAML::load(File.read(File.expand_path(File.join(
           File.dirname(__FILE__), '..', '..', 'data', "#{name}.yml"))))
         country = self.new
@@ -41,6 +45,8 @@ module Dweller
     end
 
     private
+
+    class DwellerCountry; include Dweller::Country; end
 
     class DwellerState; include Dweller::State; end
 
