@@ -8,9 +8,7 @@ Currently, at a very initial stage. Suggestions are welcome.
 
 By now, only Brazil is supported.
 
-Usage (yes, must be improved):
+Usage:
 
-    class Country; include Dweller::Country; end
-
-    rio = Country.load_country('brazil').state('RJ').
+    rio = Dweller::Country.named('brazil').state('RJ').
     campos = rio.city('Campos dos Goytacazes')
